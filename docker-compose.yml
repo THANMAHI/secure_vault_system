@@ -1,0 +1,10 @@
+services:
+  vault-system:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8545:8545"
+    volumes:
+      - .:/app
+      - /app/node_modules
