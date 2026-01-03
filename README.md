@@ -16,7 +16,7 @@ The system consists of three main components: the Off-Chain Signer, the Vault, a
 ### Component Diagram
 This diagram shows the static relationships and trust boundaries between contracts.
 
-```
+```mermaid
 graph TD
     User((User)) -->|1. Request Auth| Owner["Off-Chain Signer\n(Owner Key)"]
     User -->|2. Submit Withdraw| Vault["SecureVault\n(Holds Funds)"]
